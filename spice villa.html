@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spice Villa - Menu</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Body background */
+        body {
+            background: url('https://static.vecteezy.com/system/resources/previews/046/588/348/non_2x/vegetables-seamless-pattern-isolated-yellow-background-veggies-icons-set-minimalist-horizontal-banner-organic-food-natural-eco-product-harvesting-for-cover-wrapping-paper-textile-print-vector.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+        }
+
+        /* Navbar */
+        header.navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 30px;
+            height: 80px;
+            background: url('https://images.pexels.com/photos/326333/pexels-photo-326333.jpeg?cs=srgb&dl=pexels-pixabay-326333.jpg&fm=jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+         .logo {
+        position: absolute;
+        left: 50%;
+         transform: translateX(-50%);
+         font-size: 28px;
+        font-weight: bold;
+        color: white !important;  /* Force white color */
+        text-decoration: none;
+      }
+           .logo a {
+    color: white !important;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px black;
+     }
+
+
+
+        /* Cart on the right */
+        nav {
+            position: absolute;
+            right: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            font-size: 22px;
+        }
+
+        nav a:hover {
+            color: #ff6600;
+        }
+
+        /* Restaurant Header */
+        .restaurant-header {
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            margin: 20px auto;
+            border-radius: 10px;
+            max-width: 1100px;
+            color: black;
+            background: url('');
+        }
+
+        .restaurant-header h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .restaurant-header p {
+            font-size: 18px;
+        }
+
+        /* Menu Section */
+        .menu {
+            padding: 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .menu h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: black;
+        }
+
+        /* Menu Grid */
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        /* Menu Items */
+        .menu-item {
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .menu-item h3 {
+            font-size: 20px;
+            margin-bottom: 8px;
+            color: black;
+        }
+
+        .menu-item p {
+            font-size: 18px;
+            color: #ff4d4d;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .menu-item button {
+            background-color: #ff4d4d;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .menu-item button:hover {
+            background-color: #e63c3c;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo"><a href="index.html"><i>🍴 Quick Food</i></a></div>
+        <nav>
+            <ul>
+                <li><a href="cart.html">🛒 Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Restaurant Header -->
+    <section class="restaurant-header">
+        <h1>Spice Villa</h1>
+        <p>Authentic Indian flavors that warm your soul and spice up your taste buds!</p>
+    </section>
+
+    <!-- Menu Items -->
+    <section class="menu">
+        <h2>Our Specials</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMKHW2NYsNYLMUHjp-NCDk-pKuwqMQ3JHM8g&s" alt="Dal Fry">
+                <h3>Dal Fry</h3>
+                <p>₹350</p>
+                <button class="add-to-cart-btn" data-name="Dal Fry" data-price="350">Add to Cart</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://derafarms.com/cdn/shop/files/deraproducts-2024-06-26T165127.117.png?v=1719400896" alt="Paneer Tikka">
+                <h3>Paneer Tikka</h3>
+                <p>₹250</p>
+                <button class="add-to-cart-btn" data-name="Paneer Tikka" data-price="250">Add to Cart</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://www.indianveggiedelight.com/wp-content/uploads/2020/04/veg-biryani-instant-pot.jpg" alt="Biryani">
+                <h3>Biryani</h3>
+                <p>₹300</p>
+                <button class="add-to-cart-btn" data-name="Biryani" data-price="300">Add to Cart</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://allwaysdelicious.com/wp-content/uploads/2022/04/garlic-butter-naan-4.jpg" alt="Garlic Naan">
+                <h3>Garlic Naan</h3>
+                <p>₹50</p>
+                <button class="add-to-cart-btn" data-name="Garlic Naan" data-price="50">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="cart.js"></script>
+
+</body>
+</html>

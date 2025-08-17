@@ -1,0 +1,287 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Foodie - Full Menu</title>
+  <link rel="stylesheet" href="food.css" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #fff8f0;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header.navbar {
+      background-color: #ff4757;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: url('https://cdn.pixabay.com/photo/2017/02/07/09/02/wood-2045379_1280.jpg');
+      width:100%;
+    }
+
+
+    header .logo {
+      font-weight: 700;
+      font-size: 28px;
+      letter-spacing: 2px;
+    }
+    
+    nav ul {
+      list-style: none;
+      margin: 0; padding: 0;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover, nav ul li a.active {
+      color: #ffd3c4;
+    }
+
+    main.menu-container {
+      width: 100%;
+      margin: 0;
+      padding: 40px 20px;
+      background: url('https://static.vecteezy.com/system/resources/previews/046/588/348/non_2x/vegetables-seamless-pattern-isolated-yellow-background-veggies-icons-set-minimalist-horizontal-banner-organic-food-natural-eco-product-harvesting-for-cover-wrapping-paper-textile-print-vector.jpg');
+      background-size: cover;  
+      background-repeat: no-repeat;  
+       background-position: center;
+     
+    }
+  
+
+    main h1 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 30px;
+      color:black;
+      letter-spacing: 1.5px;
+    }
+
+    /* Categories */
+    .menu-category {
+      margin-bottom: 50px;
+    }
+
+    .menu-category h2 {
+      font-size: 28px;
+      border-bottom: 3px solid #ff4757;
+      padding-bottom: 8px;
+      margin-bottom: 25px;
+    }
+
+    /* Grid for items */
+    .menu-items-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+      gap: 30px;
+    }
+
+    .menu-item {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .menu-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    }
+
+    .menu-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .menu-item-details {
+      padding: 15px 20px;
+    }
+
+    .menu-item-details h3 {
+      margin: 0 0 10px;
+      font-size: 22px;
+      color: #ff4757;
+    }
+
+    .menu-item-details p {
+      margin: 0;
+      font-size: 15px;
+      color: #666;
+      line-height: 1.3;
+    }
+
+    .menu-item-price {
+      margin-top: 12px;
+      font-weight: 700;
+      font-size: 18px;
+      color: #333;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 25px;
+      background-color: #ff4757;
+      color: white;
+      font-weight: 600;
+      letter-spacing: 1px;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .menu-items-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo"><i>🍴 Quick Food</i></div>
+  <nav>
+    <ul>
+      <li><a href="index.html"></a></li>
+      <li><a href="menu.html" class="active"></a></li>
+       
+    </ul>
+  </nav>
+</header>
+
+<main class="menu-container">
+  <h1>Our  Menu</h1>
+
+  <!-- Burgers -->
+  <section class="menu-category">
+    <h2>Burgers</h2>
+    <div class="menu-items-grid">
+      <article class="menu-item">
+        <img src="https://assets.epicurious.com/photos/5c745a108918ee7ab68daf79/1:1/w_2503,h_2503,c_limit/Smashburger-recipe-120219.jpg" alt="Classic Burger" />
+        <div class="menu-item-details">
+          <h3>Classic Burger</h3>
+          <p>Juicy beef patty with lettuce, tomato, and our secret sauce.</p>
+          <div class="menu-item-price">₹250</div>
+        </div>
+      </article>
+
+      <article class="menu-item">
+        <img src="https://images.unsplash.com/photo-1550317138-10000687a72b?auto=format&fit=crop&w=800&q=80" alt="Cheese Burger" />
+        <div class="menu-item-details">
+          <h3>Cheese Burger</h3>
+          <p>Melted cheddar cheese, pickles, onions, and fresh veggies.</p>
+          <div class="menu-item-price">₹280</div>
+        </div>
+      </article>
+
+      <!-- Add more burger items -->
+    </div>
+  </section>
+
+  <!-- Pizzas -->
+  <section class="menu-category">
+    <h2>Pizzas</h2>
+    <div class="menu-items-grid">
+      <article class="menu-item">
+        <img src="https://static.toiimg.com/thumb/53110049.cms?width=1200&height=900" alt="Margherita Pizza" />
+        <div class="menu-item-details">
+          <h3>Margherita Pizza</h3>
+          <p>Classic tomato and mozzarella pizza with fresh basil.</p>
+          <div class="menu-item-price">₹350</div>
+        </div>
+      </article>
+
+      <article class="menu-item">
+        <img src="https://www.moulinex-me.com/medias/?context=bWFzdGVyfHJvb3R8MTQzNTExfGltYWdlL2pwZWd8YUdObEwyaG1aQzh4TlRrMk9EWXlOVGM0TmpreE1DNXFjR2N8MmYwYzQ4YTg0MTgzNmVjYTZkMWZkZWZmMDdlMWFlMjRhOGIxMTQ2MTZkNDk4ZDU3ZjlkNDk2MzMzNDA5OWY3OA" alt="Pepperoni Pizza" />
+        <div class="menu-item-details">
+          <h3>Pepperoni Pizza</h3>
+          <p>Spicy pepperoni with mozzarella and tangy tomato sauce.</p>
+          <div class="menu-item-price">₹400</div>
+        </div>
+      </article>
+
+      <!-- Add more pizzas -->
+    </div>
+  </section>
+
+  <!-- Indian -->
+  <section class="menu-category">
+    <h2>Indian Cuisine</h2>
+    <div class="menu-items-grid">
+      <article class="menu-item">
+        <img src="https://thecurrymommy.com/wp-content/uploads/2021/09/butter-paneer-masala-one-pot.jpg" alt="Butter Paneer" />
+        <div class="menu-item-details">
+          <h3>Butter Paneer</h3>
+          <p>Rich, creamy tomato gravy with tender Paneer pieces.</p>
+          <div class="menu-item-price">₹350</div>
+        </div>
+      </article>
+
+      <article class="menu-item">
+        <img src="https://sharethespice.com/wp-content/uploads/2024/02/Paneer-Tikka-Featured.jpg" />
+        <div class="menu-item-details">
+          <h3>Paneer Tikka</h3>
+          <p>Grilled paneer cubes marinated in spices and yogurt.</p>
+          <div class="menu-item-price">₹300</div>
+        </div>
+      </article>
+
+      <!-- Add more Indian dishes -->
+    </div>
+  </section>
+
+  <!-- Desserts -->
+  <section class="menu-category">
+    <h2>Desserts</h2>
+    <div class="menu-items-grid">
+      <article class="menu-item">
+        <img src="https://dilchad.com/wp-content/uploads/2025/02/Gulab-Jamun-1024x683.jpg" alt="Gulab Jamun" />
+        <div class="menu-item-details">
+          <h3>Gulab Jamun</h3>
+          <p>Sweet syrup-soaked fried milk dumplings.</p>
+          <div class="menu-item-price">₹150</div>
+        </div>
+      </article>
+
+      <article class="menu-item">
+        <img src="https://sallysbakingaddiction.com/wp-content/uploads/2013/04/triple-chocolate-cake-4.jpg" alt="Chocolate Cake" />
+        <div class="menu-item-details">
+          <h3>Chocolate Cake</h3>
+          <p>Rich and moist chocolate layered cake.</p>
+          <div class="menu-item-price">₹200</div>
+        </div>
+      </article>
+
+      <!-- Add more desserts -->
+    </div>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 Foodie. All rights reserved.
+</footer>
+
+</body>
+</html>

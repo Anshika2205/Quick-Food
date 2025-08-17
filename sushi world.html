@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushi World - Menu</title>
+    <link rel="stylesheet" href="food.css">
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: url('https://static.vecteezy.com/system/resources/previews/046/588/348/non_2x/vegetables-seamless-pattern-isolated-yellow-background-veggies-icons-set-minimalist-horizontal-banner-organic-food-natural-eco-product-harvesting-for-cover-wrapping-paper-textile-print-vector.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+        }
+
+        /* Navbar */
+        header.navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 30px;
+            height: 80px;
+            background: url('https://images.pexels.com/photos/326333/pexels-photo-326333.jpeg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        /* Logo in center */
+        .logo {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .logo a {
+            color: white !important; /* ensure it's white */
+            text-decoration: none;
+            text-shadow: 1px 1px 2px black; /* makes it visible on bright bg */
+        }
+
+        /* Cart on the right */
+        nav {
+            position: absolute;
+            right: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            font-size: 22px;
+        }
+
+        nav a:hover {
+            color: #ff6600;
+        }
+
+        /* Restaurant Header */
+        .restaurant-header {
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            margin: 20px auto;
+            border-radius: 10px;
+            max-width: 1100px;
+            color: black;
+            background: url('');
+        }
+
+        .restaurant-header h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .restaurant-header p {
+            font-size: 18px;
+            color: black;
+        }
+
+        /* Menu Section */
+        .menu {
+            padding: 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .menu h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: black;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .menu-item {
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .menu-item h3 {
+            font-size: 20px;
+            margin-bottom: 8px;
+            color: black;
+        }
+
+        .menu-item p {
+            font-size: 18px;
+            color: #ff4d4d;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .menu-item button {
+            background-color: #ff4d4d;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .menu-item button:hover {
+            background-color: #e63c3c;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo"><a href="index.html"><i>🍴 Quick Food</i></a></div>
+        <nav>
+            <ul>
+                <li><a href="cart.html">🛒 Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Restaurant Header -->
+    <section class="restaurant-header">
+        <h1>Sushi World</h1>
+        <p>Fresh, authentic sushi crafted with precision and love from Japan.</p>
+    </section>
+
+    <!-- Menu Items -->
+    <section class="menu">
+        <h2>Our Specials</h2>
+        <div class="menu-grid">
+            
+            <div class="menu-item">
+                <img src="https://simmerandsage.com/wp-content/uploads/2023/09/Crunchy-California-Roll1.jpg" alt="California Roll">
+                <h3>California Roll</h3>
+                <p>₹400</p>
+                <button class="add-to-cart-btn" data-name="California Roll" data-price="400">Add to Cart</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSGjeRoObjdPjDPMLH8GyTsqa65VLAHg8YvA&s" alt="Salmon Nigiri">
+                <h3>Salmon Nigiri</h3>
+                <p>₹450</p>
+                <button class="add-to-cart-btn" data-name="Salmon Nigiri" data-price="450">Add to Cart</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://manjulaskitchen.com/wp-content/uploads/vegetable_kathi_roll.jpg" alt="Veggie Roll">
+                <h3>Veggie Roll</h3>
+                <p>₹300</p>
+                <button class="add-to-cart-btn" data-name="Veggie Roll" data-price="300">Add to Cart</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://int.japanesetaste.com/cdn/shop/articles/mixed-miso-soup-recipe-japanese-taste.jpg?v=1737982159&width=5760" alt="Miso Soup">
+                <h3>Miso Soup</h3>
+                <p>₹150</p>
+                <button class="add-to-cart-btn" data-name="Miso Soup" data-price="150">Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="cart.js"></script>
+</body>
+</html>

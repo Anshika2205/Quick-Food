@@ -1,0 +1,102 @@
+.offers {
+  padding: 60px 20px;
+  background: linear-gradient(to right, #fff0e6, #ffe6e6);
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  background: url('https://static.vecteezy.com/system/resources/previews/046/588/348/non_2x/vegetables-seamless-pattern-isolated-yellow-background-veggies-icons-set-minimalist-horizontal-banner-organic-food-natural-eco-product-harvesting-for-cover-wrapping-paper-textile-print-vector.jpg');
+}
+
+.offers h2 {
+  font-size: 2.8rem;
+  color: #ff3d00;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.offers-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.offer-card {
+  position: relative;
+  background-color: #fff;
+  border-radius: 20px;
+  width: 260px;
+  padding: 20px;
+  box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.offer-card:hover {
+  transform: translateY(-15px) scale(1.05);
+  box-shadow: 0 25px 40px rgba(0,0,0,0.25);
+}
+
+.offer-card img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  transition: transform 0.4s;
+}
+
+.offer-card:hover img {
+  transform: scale(1.1);
+}
+
+.offer-card h3 {
+  color: #ff3d00;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.offer-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.offer-card button {
+  background: linear-gradient(45deg, #ff3d00, #ff704d);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.offer-card button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(255,61,0,0.5);
+}
+
+.offer-badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: #ff3d00;
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1024px) {
+  .offers-grid {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .offers-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}

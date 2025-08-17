@@ -1,4 +1,4 @@
-<img width="2880" height="1548" alt="image" src="https://github.com/user-attachments/assets/6d36b3a1-36c1-451e-b1f2-b586dc4f3f38" />A responsive and visually appealing food-themed website showcasing delicious recipes (or restaurant menu, blog, etc.). Built using HTML, CSS, and JavaScript.
+A responsive and visually appealing food-themed website showcasing delicious recipes (or restaurant menu, blog, etc.). Built using HTML, CSS, and JavaScript.
  
  📁 Project Features
 1.🔥 Clean and modern design
